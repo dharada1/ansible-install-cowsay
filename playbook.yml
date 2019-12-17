@@ -3,7 +3,5 @@
     tasks:
       - name: install cowsay
         yum:
-          name: "{{ item }}"
+          name: cowsay
           state: latest
-          with_items:
-            - cowsay
