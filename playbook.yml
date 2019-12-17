@@ -1,0 +1,9 @@
+---
+  - hosts: 127.0.0.1
+    tasks:
+      - name: install cowsay
+        yum:
+          name: "{{ item }}"
+          state: latest
+          with_items:
+            - cowsay
